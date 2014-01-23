@@ -7,18 +7,18 @@
   <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body id="body">
-  <div class="main" id="wrapper">
-    <section class="home" id="home">
+  <div class="main">
+    <section class="home">
       <nav class="navbar-pills">
         <div class="container">
           <a class="navbar-brand" href="#">The Beginning</a>
           <ul class="nav nav-pills pull-right">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Our team</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a onclick="$('.home').animatescroll();">Home</a></li>
+            <li><a onclick="$('.about').animatescroll();">About</a></li>
+            <li><a onclick="$('.services').animatescroll();">Services</a></li>
+            <li><a onclick="$('.portfolio').animatescroll();">Portfolio</a></li>
+            <li><a onclick="$('.team').animatescroll();">Our team</a></li>
+            <li><a onclick="$('.contact').animatescroll();">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -39,31 +39,40 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#team">Our team</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a onclick="$('.home').animatescroll();">Home</a></li>
+              <li><a onclick="$('.about').animatescroll();">About</a></li>
+              <li><a onclick="$('.services').animatescroll();">Services</a></li>
+              <li><a onclick="$('.portfolio').animatescroll();">Portfolio</a></li>
+              <li><a onclick="$('.team').animatescroll();">Our team</a></li>
+              <li><a onclick="$('.contact').animatescroll();">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
       </nav>
+      
+      <div class="container">
+        <div class="jumbotron main-jb col-md-10 col-xs-12">
+          <p class="lead">Welcome to The Beginning!</p>
+          <h1>Responsive & clean template</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, earum, consequuntur, culpa rem quasi voluptates eaque alias.</p>
+          <p><a class="btn btn-success btn-lg" role="button" onclick="$('.about').animatescroll();">Learn more</a></p>
+        </div>
+      </div>
     </section>
     
-    <section class="about" id="about">
+    <section class="about">
       
     </section>
-    <section class="services" id="services">
+    <section class="services">
       
     </section>
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio">
       
     </section>
-    <section class="team" id="team">
+    <section class="team">
       
     </section>
-    <section class="contact" id="contact">
+    <section class="contact">
       
     </section>
   </div>
@@ -76,6 +85,7 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/waypoints.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/animatescroll.js"></script>
   <script>
     $(".about").waypoint(function(direction) {
       if(direction == "down") {
