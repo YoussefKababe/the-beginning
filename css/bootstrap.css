@@ -53,8 +53,6 @@ body {
   height: auto;
   min-height: 100%;
   padding-top: 45px;
-  box-shadow: 0 0 1000px 1000px rgba(0,0,0,0.6) inset;
-  -webkit-box-shadow: 0 0 1000px 1000px rgba(0,0,0,0.4) inset;
 }
 
 .main section.about,
