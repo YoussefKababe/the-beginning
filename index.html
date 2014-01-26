@@ -8,7 +8,7 @@
 </head>
 <body id="body">
   <div class="main">
-    <section class="home">
+    <section class="home" data-stellar-background-ratio="0.1">
       <nav class="navbar-pills">
         <div class="container">
           <a class="navbar-brand" href="#">The Beginning</a>
@@ -63,7 +63,7 @@
     <section class="about">
       
     </section>
-    <section class="services">
+    <section class="services" data-stellar-background-ratio="0.1">
       
     </section>
     <section class="portfolio">
@@ -86,14 +86,9 @@
   <script src="js/waypoints.js"></script>
   <script src="js/script.js"></script>
   <script src="js/animatescroll.js"></script>
+  <script src="js/jquery.stellar.js"></script>
   <script>
-    $(".about").waypoint(function(direction) {
-      if(direction == "down") {
-        $("body").css("background-image", "url(img/header2.png)");
-      } else {
-        $("body").css("background-image", "url(img/header.jpg)");
-      }
-    });
+    $.stellar();
   </script>
 </body>
 </html>
