@@ -26,9 +26,15 @@ $(".about").waypoint(function(direction) {
   if(!$target) {
     if(direction == "down") {
       $(".navbar").find("li:contains('About')").addClass("active");
+      $(".navbar").find('li:contains("Home")').removeClass("active");
     } else {
       $(".navbar").find("li:contains('About')").removeClass("active");
+      $(".navbar").find('li:contains("Home")').addClass("active");
     }
+  } else if($target == "Home" && direction == "up") {
+    $target = false;
+  } else if($target == "Services" && direction == "down") {
+    $target = false;
   }
 }, { offset: 200 });
 
@@ -104,5 +110,6 @@ $(".navbar").find("li").click(function() {
 
 $(".nav-pills").find("li").click(function() {
   $target = $(this).find('a').text();
+  $(".navbar").find("li").removeClass("active");
   $(".navbar").find('li:contains("'+$target+'")').addClass("active");
 });
