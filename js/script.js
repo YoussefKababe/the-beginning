@@ -1,13 +1,14 @@
 var $target = false;
+var $nav_status = "hidden";
 
 $(window).resize(function () { 
   if (window.innerWidth <= 992) {
-    $(".navbar").css("display", "block");
+    $(".navbar").css("top", "0");
   } else {
-    if ( $(window).scrollTop() >= 100 ) {
-      $(".navbar").css("display", "block");
+    if($nav_status == "hidden") {
+      $(".navbar").css("top", "-52px");
     } else {
-      $(".navbar").css("display", "none");
+      $(".navbar").css("top", "0");
     }
   }
 });
@@ -15,9 +16,17 @@ $(window).resize(function () {
 $(".about").waypoint(function(direction) {
   if (window.innerWidth > 992) {
     if(direction == "down") {
-      $(".navbar").fadeToggle();
+      $(".navbar").css("top", "0");
+      $nav_status = "shown";
     } else {
-      $(".navbar").fadeToggle();
+      $(".navbar").css("top", "-52px");
+      $nav_status = "hidden";
+    }
+  } else {
+    if(direction == "down") {
+      $nav_status = "shown";
+    } else {
+      $nav_status = "hidden";
     }
   }
 }, { offset: 50 });

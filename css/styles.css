@@ -33,6 +33,15 @@ html, body {
   font-size: 25px;
 }
 
+.navbar-default {
+  top: -52px;
+  transition: top .5s;
+  -webkit-transition: top .5s;
+  -moz-transition: top .5s;
+  -o-transition: top .5s;
+  -ms-transition: top .5s;
+}
+
 .navbar-pills .nav > li > a:hover,
 .navbar-pills .nav > li > a:focus {
   text-decoration: none;
@@ -69,12 +78,12 @@ html, body {
   }
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .navbar {
     display: none;
   }
 }
-
+*/
 .main section {
   background-color: #fff;
 }
