@@ -35,6 +35,8 @@ $(".about").waypoint(function(direction) {
     $target = false;
   } else if($target == "Services" && direction == "down") {
     $target = false;
+  } else if($target == "About") {
+    $target = false;
   }
 }, { offset: 200 });
 
@@ -50,6 +52,8 @@ $(".services").waypoint(function(direction) {
   } else if($target == "About" && direction == "up") {
     $target = false;
   } else if($target == "Portfolio" && direction == "down") {
+    $target = false;
+  } else if($target == "Services") {
     $target = false;
   }
 }, { offset: 200 });
@@ -67,6 +71,8 @@ $(".portfolio").waypoint(function(direction) {
     $target = false;
   } else if($target == "Our team" && direction == "down") {
     $target = false;
+  } else if($target == "Portfolio") {
+    $target = false;
   }
 }, { offset: 200 });
 
@@ -83,6 +89,8 @@ $(".team").waypoint(function(direction) {
     $target = false;
   } else if($target == "Contact" && direction == "down") {
     $target = false;
+  } else if($target == "Our team") {
+    $target = false;
   }
 }, { offset: 200 });
 
@@ -96,6 +104,8 @@ $(".contact").waypoint(function(direction) {
       $(".navbar").find("li:contains('Our team')").addClass("active");
     }
   } else if($target == "Our team" && direction == "up") {
+    $target = false;
+  } else if($target == "Contact") {
     $target = false;
   }
 }, { offset: 200 });
