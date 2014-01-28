@@ -132,3 +132,30 @@ $(".nav-pills").find("li").click(function() {
   $(".navbar").find("li").removeClass("active");
   $(".navbar").find('li:contains("'+$target+'")').addClass("active");
 });
+
+$(".service.img-right").waypoint(function(){
+  if (window.innerWidth > 992) {
+    $(this).find('img').css("left", "0");
+    $(this).find('img').css("opacity", "1");
+    $(this).find('.well').css("right", "0");
+    $(this).find('.well').css("opacity", "1");
+  }
+}, { offset: 500 });
+
+$(".service.img-left").waypoint(function(){
+  if (window.innerWidth > 992) {
+    $(this).find('img').css("right", "0");
+    $(this).find('img').css("opacity", "1");
+    $(this).find('.well').css("left", "0");
+    $(this).find('.well').css("opacity", "1");
+  }
+}, { offset: 500 });
+
+$(".service").waypoint(function(){
+  if (window.innerWidth <= 992) {
+    $(this).find('img').css("top", "0");
+    $(this).find('img').css("opacity", "1");
+    $(this).find('.well').css("top", "0");
+    $(this).find('.well').css("opacity", "1");
+  }
+}, { offset: 500 });
