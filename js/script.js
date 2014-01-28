@@ -29,7 +29,7 @@ $(".about").waypoint(function(direction) {
       $nav_status = "hidden";
     }
   }
-}, { offset: 50 });
+}, { offset: 51 });
 
 $(".about").waypoint(function(direction) {
   if(!$target) {

@@ -89,7 +89,6 @@ html, body {
   /*background-position-x: center !important;*/
   background-size: cover;
   background-attachment: fixed;
-  height: auto;
   min-height: 100%;
   padding-top: 45px;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
@@ -100,12 +99,6 @@ html, body {
 .main section.team,
 .main section.contact {
   height: 800px;
-}
-
-.main section.services {
-  background-position-x: center !important;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .home .main-jb {
