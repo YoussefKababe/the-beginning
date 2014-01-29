@@ -160,6 +160,6 @@ $(".about").waypoint(function() {
   $(this).find('.about-icon').css({"opacity": "1", "top": "0"});
 }, { offset: 100 });
 
-$(".about").find(".img-bg").waypoint(function() {
-  $(this).find('.about-footer').css("opacity", "1");
+$("section").find(".section-footer-bg").waypoint(function() {
+  $(this).find('.section-footer').css("opacity", "1");
 }, { offset: 300 });
