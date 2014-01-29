@@ -135,27 +135,31 @@ $(".nav-pills").find("li").click(function() {
 
 $(".service.img-right").waypoint(function(){
   if (window.innerWidth > 992) {
-    $(this).find('img').css("left", "0");
-    $(this).find('img').css("opacity", "1");
-    $(this).find('.well').css("right", "0");
-    $(this).find('.well').css("opacity", "1");
+    $(this).find('img').css({"left": "0", "opacity": "1"});
+    $(this).find('.well').css({"right": "0", "opacity": "1"});
   }
 }, { offset: 500 });
 
 $(".service.img-left").waypoint(function(){
   if (window.innerWidth > 992) {
-    $(this).find('img').css("right", "0");
-    $(this).find('img').css("opacity", "1");
-    $(this).find('.well').css("left", "0");
-    $(this).find('.well').css("opacity", "1");
+    $(this).find('img').css({"right": "0", "opacity": "1"});
+    $(this).find('.well').css({"left": "0", "opacity": "1"});
   }
 }, { offset: 500 });
 
 $(".service").waypoint(function(){
   if (window.innerWidth <= 992) {
-    $(this).find('img').css("top", "0");
-    $(this).find('img').css("opacity", "1");
-    $(this).find('.well').css("top", "0");
-    $(this).find('.well').css("opacity", "1");
+    $(this).find('img').css({"top": "0", "opacity": "1"});
+    $(this).find('.well').css({"top": "0", "opacity": "1"});
   }
 }, { offset: 500 });
+
+$(".about").waypoint(function() {
+  $(this).find('.prim-well').css({"opacity": "1", "left": "0"});
+  $(this).find('.about-img').css({"opacity": "1", "top": "0"});
+  $(this).find('.about-icon').css({"opacity": "1", "top": "0"});
+}, { offset: 100 });
+
+$(".about").find(".img-bg").waypoint(function() {
+  $(this).find('.about-footer').css("opacity", "1");
+}, { offset: 300 });
