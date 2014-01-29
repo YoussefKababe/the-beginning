@@ -97,6 +97,30 @@ html, body {
   }
 }
 
+@media (min-width: 768px) {
+  .navbar-default li.active a {
+    background-color: rgba(231, 231, 231, 0.4) !important;
+    border-top: 3px solid black;
+    border-color: #5bc0de;
+    padding-top: 12px;
+  }
+
+  .navbar-default li.active a:after {
+  top: 0;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(91, 192, 222, 0);
+  border-top-color: #5bc0de;
+  border-width: 6px;
+  margin-left: -6px;
+}
+}
+
 .main section {
   background-color: #fff;
 }
@@ -140,6 +164,7 @@ html, body {
   padding: 20px 30px;
   width: 200px;
 }
+
 /*************************************************************************/
 /* Services section styles                                               */
 /*************************************************************************/
