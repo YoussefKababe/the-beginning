@@ -1,6 +1,24 @@
 @font-face {
-font-family: Gabriela;
-src: url(../fonts/Gabriela-Regular.ttf);
+font-family: Oxygen;
+src: url(../fonts/Oxygen-Regular.ttf);
+font-weight:bold;
+}
+
+@font-face {
+font-family: Oxygen-bold;
+src: url(../fonts/Oxygen-Bold.ttf);
+font-weight:bold;
+}
+
+@font-face {
+font-family: SansPro;
+src: url(../fonts/SourceSansPro-Regular.ttf);
+font-weight:bold;
+}
+
+@font-face {
+font-family: SansPro-bold;
+src: url(../fonts/SourceSansPro-Bold.ttf);
 font-weight:bold;
 }
 
@@ -10,12 +28,11 @@ html, body {
 
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
   font-size: 40px;
   line-height: 20px;
-  font-family: 'Gabriela', cursive;
-  font-weight: bold;
+  font-family: 'SansPro', Helvetica, Arial, sans-serif;
   color: #fff;
+  padding-top: 5px;
 }
 
 .navbar-brand:hover,
@@ -26,24 +43,24 @@ html, body {
 
 .navbar-default {
   text-shadow: none;
-}
-
-.navbar-default a {
-  cursor: pointer;
-}
-
-.navbar-default .navbar-brand {
-  color: #777777;
-  font-size: 25px;
-}
-
-.navbar-default {
+  background-color: rgba(255,255,255,.85);
   top: -52px;
   transition: top .5s;
   -webkit-transition: top .5s;
   -moz-transition: top .5s;
   -o-transition: top .5s;
   -ms-transition: top .5s;
+}
+
+.navbar-default a {
+  cursor: pointer;
+  font-family: 'SansPro-bold', Helvetica, Arial, sans-serif;
+}
+
+.navbar-default .navbar-brand {
+  color: #777777;
+  font-size: 25px;
+  padding-top: 15px;
 }
 
 .navbar-pills .nav > li > a:hover,
@@ -55,8 +72,8 @@ html, body {
 .navbar-pills .nav > li > a {
   border-radius: 4px;
   color: #fff;
-  font-weight: bold;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .navbar-pills .nav > li.active > a:hover,
@@ -86,12 +103,13 @@ html, body {
 
 .main section.home {
   background-image: url(../img/header.jpg);  
-  /*background-position-x: center !important;*/
+  background-position-x: center !important;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
   padding-top: 45px;
-  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+  font-family: 'SansPro-bold', Helvetica, Arial, sans-serif;
 }
 
 .main section.about,
@@ -102,42 +120,26 @@ html, body {
 }
 
 .home .main-jb {
-  margin: 80px 0 160px;
+  margin: 80px 0 90px;
   background: transparent;
   color: #fff;
   padding-left: 15px !important;
-  text-align: center;
 }
 
 .home .main-jb h1,
 .home .main-jb p {
-  font-family: Gabriela, cursive !important;
-}
-
-.home .main-jb p.lead {
-  color: rgba(255,255,255,0.8);
+  font-family: 'Oxygen', sans-serif !important;
 }
 
 .home .main-jb .btn {
-  margin: 50px auto 0;
+  margin-top: 50px;
   font-size: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Oxygen-bold', sans-serif;
   font-weight: bold;
   text-shadow: none;
   padding: 20px 30px;
-  opacity: 0.2;
   width: 200px;
-  transition: all .5s;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
 }
-
-.home .main-jb:hover .btn {
-  opacity: 1;
-}
-
 /*************************************************************************/
 /* Services section styles                                               */
 /*************************************************************************/
