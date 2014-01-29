@@ -47,7 +47,7 @@ $(".about").waypoint(function(direction) {
   } else if($target == "About") {
     $target = false;
   }
-}, { offset: 200 });
+}, { offset: 250 });
 
 $(".services").waypoint(function(direction) {
   if(!$target) {
@@ -65,7 +65,7 @@ $(".services").waypoint(function(direction) {
   } else if($target == "Services") {
     $target = false;
   }
-}, { offset: 200 });
+}, { offset: 250 });
 
 $(".portfolio").waypoint(function(direction) {
   if(!$target) {
@@ -83,7 +83,7 @@ $(".portfolio").waypoint(function(direction) {
   } else if($target == "Portfolio") {
     $target = false;
   }
-}, { offset: 200 });
+}, { offset: 250 });
 
 $(".team").waypoint(function(direction) {
   if(!$target) {
@@ -101,7 +101,7 @@ $(".team").waypoint(function(direction) {
   } else if($target == "Our team") {
     $target = false;
   }
-}, { offset: 200 });
+}, { offset: 250 });
 
 $(".contact").waypoint(function(direction) {
   if(!$target) {
@@ -117,7 +117,7 @@ $(".contact").waypoint(function(direction) {
   } else if($target == "Contact") {
     $target = false;
   }
-}, { offset: 200 });
+}, { offset: 250 });
 
 $(".navbar").find("li").click(function() {
   if(!$(this).hasClass("active")) {

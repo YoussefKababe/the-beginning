@@ -24,7 +24,27 @@ font-weight:bold;
 
 html, body {
   height: 100%;
+  font-family: Oxygen;
 } 
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .navbar-brand {
   float: left;
@@ -55,6 +75,11 @@ html, body {
 .navbar-default a {
   cursor: pointer;
   font-family: 'SansPro-bold', Helvetica, Arial, sans-serif;
+  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+  -moz-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  -ms-transition: background-color .5s;
 }
 
 .navbar-default .navbar-brand {
@@ -101,7 +126,7 @@ html, body {
   .navbar-default li.active a {
     background-color: rgba(231, 231, 231, 0.4) !important;
     border-top: 3px solid black;
-    border-color: #5bc0de;
+    border-color: #384047;
     padding-top: 12px;
   }
 
@@ -115,7 +140,7 @@ html, body {
   position: absolute;
   pointer-events: none;
   border-color: rgba(91, 192, 222, 0);
-  border-top-color: #5bc0de;
+  border-top-color: #384047;
   border-width: 6px;
   margin-left: -6px;
 }
@@ -132,15 +157,16 @@ html, body {
   background-attachment: fixed;
   min-height: 100%;
   padding-top: 45px;
-  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
   font-family: 'SansPro-bold', Helvetica, Arial, sans-serif;
 }
 
 .main section.about,
 .main section.portfolio,
 .main section.team,
-.main section.contact {
-  height: 800px;
+.main section.contact,
+.main section.services {
+  padding: 100px 0 100px;
 }
 
 .home .main-jb {
@@ -152,7 +178,7 @@ html, body {
 
 .home .main-jb h1,
 .home .main-jb p {
-  font-family: 'Oxygen', sans-serif !important;
+  font-family: 'Oxygen-bold', sans-serif !important;
 }
 
 .home .main-jb .btn {
@@ -165,12 +191,99 @@ html, body {
   width: 200px;
 }
 
+.well {
+  border-radius: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  box-shadow: none;
+}
+
+.well h3 {
+  margin-top: 0;
+  font-family: 'Oxygen-bold', sans-serif !important;
+  color: #384047;
+}
+
+.well p {
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #8c989e;
+  line-height: 200%;
+  font-family: 'Oxygen', sans-serif !important
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+.main .btn {
+  background-color: #384047;
+  border-color: #384047;
+}
+
+/*************************************************************************/
+/* About section styles                                                  */
+/*************************************************************************/
+
+.about {
+  padding-bottom: 0 !important;
+}
+
+.about .img-bg {
+  background-image: url(../img/about/background.jpg);  
+  background-position-x: center !important;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.about .about-footer {
+  text-align: center;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  padding: 90px 0 90px;
+}
+
+.about .about-footer h3 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.about .about-footer p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.about .about-img {
+  width: 100%;
+}
+
+.about .about-icon {
+  text-align: center;
+}
+
+.about .about-icon img {
+  width: 60%;
+}
+
+.about .about-icon p {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Oxygen-bold', sans-serif;
+  font-size: 16px;
+}
+
+/*************************************************************************/
+/* ENDOF About section styles                                            */
+/*************************************************************************/
+
 /*************************************************************************/
 /* Services section styles                                               */
 /*************************************************************************/
 
 .services {
-  padding: 30px 0 30px;
+  padding: 50px 0 50px !important;
 }
 
 .services img {
@@ -184,39 +297,16 @@ html, body {
   -ms-transition: all .5s;
 }
 
-.services .row {
-  margin-bottom: 50px;
-}
-
 .services .row:last-child {
   margin-bottom: 0;
 }
 
 .services .well {
-  border-radius: 0;
-  margin: 0;
-  background-color: transparent;
-  border: none;
-  position: relative;
-  box-shadow: none;
   transition: all .5s;
   -moz-transition: all .5s;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   -ms-transition: all .5s;
-}
-
-.services .well h3 {
-  margin-top: 0;
-  font-family: Gabriela, cursive;
-  color: #384047;
-}
-
-.services .well p {
-  margin-bottom: 0;
-  font-size: 20px;
-  color: #8c989e;
-  line-height: 200%;
 }
 
 @media (min-width: 992px) {
