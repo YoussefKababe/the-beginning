@@ -441,10 +441,19 @@ body h3 {
 .team .social-icon li a {
   padding: 15px 0;
   display: block;
+  color: #fff;
+  font-size: 19px;
+  text-decoration: none;
 }
 
 .team .thumbnail:hover .social {
   height: 50px;
+}
+
+@media (max-width: 992px) {
+  .team .social {
+    height: 50px;
+  }
 }
 
 .team .social-icon .facebook {
