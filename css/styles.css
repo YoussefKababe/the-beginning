@@ -253,6 +253,16 @@ body h3 {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .section-footer h3 {
+    font-size: 30px;
+  }
+
+  .section-footer p {
+    font-size: 15px;
+  }
+}
+
 /*************************************************************************/
 /* About section styles                                                  */
 /*************************************************************************/
@@ -486,6 +496,10 @@ body h3 {
 .team .social-icon .linkedin {
   background-color: #3A9BDC;
 }
+
+.team .section-footer-bg {
+  background-image: url(../img/team/background.jpg);
+} 
 
 /*************************************************************************/
 /* ENDOF Team section styles                                             */
