@@ -69,21 +69,21 @@ body h3 {
   text-shadow: none;
   background-color: rgba(255,255,255,.85);
   top: -52px;
-  transition: top .5s;
-  -webkit-transition: top .5s;
-  -moz-transition: top .5s;
-  -o-transition: top .5s;
-  -ms-transition: top .5s;
+  transition: top .8s;
+  -webkit-transition: top .8s;
+  -moz-transition: top .8s;
+  -o-transition: top .8s;
+  -ms-transition: top .8s;
 }
 
 .navbar-default a {
   cursor: pointer;
   font-family: 'SansPro-bold', Helvetica, Arial, sans-serif;
-  transition: background-color .5s;
-  -webkit-transition: background-color .5s;
-  -moz-transition: background-color .5s;
-  -o-transition: background-color .5s;
-  -ms-transition: background-color .5s;
+  transition: background-color .8s;
+  -webkit-transition: background-color .8s;
+  -moz-transition: background-color .8s;
+  -o-transition: background-color .8s;
+  -ms-transition: background-color .8s;
 }
 
 .navbar-default .navbar-brand {
@@ -236,11 +236,11 @@ body h3 {
   text-align: center;
   background-color: rgba(12,20,28,.3);
   opacity: 0;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
+  transition: all .8s;
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
 }
 
 .section-footer h3 {
@@ -280,21 +280,21 @@ body h3 {
   top: -150px;
   position: relative;
   opacity: 0;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
+  transition: all .8s;
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
 }
 
 .about .prim-well {
   left: -150px;
   opacity: 0;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
+  transition: all .8s;
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
 }
 
 .about .about-icon {
@@ -305,11 +305,11 @@ body h3 {
   .about .about-icon {
     top: 150px;
     opacity: 0;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    -ms-transition: all .8s;
   }
 }
 
@@ -344,11 +344,11 @@ body h3 {
   position: relative;
   display: table;
   margin: auto;
-  transition: all .5s;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
+  transition: all .8s;
+  -moz-transition: all .8s;
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
 }
 
 .services .row:last-child {
@@ -356,11 +356,11 @@ body h3 {
 }
 
 .services .well {
-  transition: all .5s;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
+  transition: all .8s;
+  -moz-transition: all .8s;
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
 }
 
 @media (min-width: 992px) {
@@ -414,6 +414,20 @@ body h3 {
 /* Team section styles                                                   */
 /*************************************************************************/
 
+.team .container {
+  transform: scale(0.2,0.2);
+  -webkit-transform: scale(0.2,0.2);
+  -moz-transform: scale(0.2,0.2);
+  -o-transform: scale(0.2,0.2);
+  -ms-transform: scale(0.2,0.2);
+  opacity: 0;
+  transition: all .8s;
+  -moz-transition: all .8s;
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
+}
+
 .team .row {
   margin-bottom: 0;
 }
@@ -422,11 +436,11 @@ body h3 {
   padding: 0;
   border-radius: 0;
   margin-bottom: 50px;
-  transition: all .5s;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
+  transition: all .8s;
+  -moz-transition: all .8s;
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
 }
 
 @media (min-width: 992px) {
@@ -442,11 +456,11 @@ body h3 {
 .team .social {
   height: 5px;
   overflow: hidden;
-  transition: all .5s;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
+  transition: all .8s;
+  -moz-transition: all .8s;
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
 }
 
 .team .social-icon {

@@ -163,3 +163,7 @@ $(".about").waypoint(function() {
 $("section").find(".section-footer-bg").waypoint(function() {
   $(this).find('.section-footer').css("opacity", "1");
 }, { offset: 300 });
+
+$(".team").waypoint(function() {
+  $(this).find(".container").css({"opacity": "1", "transform": "scale(1,1)"});
+}, { offset: 150 });
