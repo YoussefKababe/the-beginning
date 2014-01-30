@@ -24,8 +24,12 @@ font-weight:bold;
 
 html, body {
   height: 100%;
-  font-family: Oxygen;
+  font-family: 'Oxygen', sans-serif !important;
 } 
+
+body h3 {
+  font-family: 'Oxygen-bold', sans-serif !important;
+}
 
 .embed-container {
   position: relative;
@@ -189,6 +193,8 @@ html, body {
   text-shadow: none;
   padding: 20px 30px;
   width: 200px;
+  background-color: #384047;
+  border-color: #384047;
 }
 
 .well {
@@ -202,7 +208,6 @@ html, body {
 
 .well h3 {
   margin-top: 0;
-  font-family: 'Oxygen-bold', sans-serif !important;
   color: #384047;
 }
 
@@ -211,16 +216,10 @@ html, body {
   font-size: 20px;
   color: #8c989e;
   line-height: 200%;
-  font-family: 'Oxygen', sans-serif !important;
 }
 
 .row {
   margin-bottom: 50px;
-}
-
-.main .btn {
-  background-color: #384047;
-  border-color: #384047;
 }
 
 .section-footer-bg {
@@ -399,4 +398,71 @@ html, body {
 
 /*************************************************************************/
 /* ENDOF Services section styles                                         */
+/*************************************************************************/
+
+/*************************************************************************/
+/* Team section styles                                                   */
+/*************************************************************************/
+
+
+.team .thumbnail {
+  padding: 0;
+  border-radius: 0;
+}
+
+.team .thumbnail h3 {
+  font-size: 22px;
+}
+
+.team .social {
+  height: 5px;
+  overflow: hidden;
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+}
+
+.team .social-icon {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.team .social-icon li {
+  display: block;
+  position: relative;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.team .social-icon li a {
+  padding: 15px 0;
+  display: block;
+}
+
+.team .thumbnail:hover .social {
+  height: 50px;
+}
+
+.team .social-icon .facebook {
+  background-color: #6788CE;
+}
+
+.team .social-icon .twitter {
+  background-color: #29C5F6;
+}
+
+.team .social-icon .google {
+  background-color: #E75C3C;
+}
+
+.team .social-icon .linkedin {
+  background-color: #3A9BDC;
+}
+
+/*************************************************************************/
+/* ENDOF Team section styles                                             */
 /*************************************************************************/
