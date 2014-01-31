@@ -69,21 +69,21 @@ body h3 {
   text-shadow: none;
   background-color: rgba(255,255,255,.85);
   top: -52px;
-  transition: top .8s;
-  -webkit-transition: top .8s;
-  -moz-transition: top .8s;
-  -o-transition: top .8s;
-  -ms-transition: top .8s;
+  transition: top .6s;
+  -webkit-transition: top .6s;
+  -moz-transition: top .6s;
+  -o-transition: top .6s;
+  -ms-transition: top .6s;
 }
 
 .navbar-default a {
   cursor: pointer;
   font-family: 'SansPro-bold', Helvetica, Arial, sans-serif;
-  transition: background-color .8s;
-  -webkit-transition: background-color .8s;
-  -moz-transition: background-color .8s;
-  -o-transition: background-color .8s;
-  -ms-transition: background-color .8s;
+  transition: background-color .6s;
+  -webkit-transition: background-color .6s;
+  -moz-transition: background-color .6s;
+  -o-transition: background-color .6s;
+  -ms-transition: background-color .6s;
 }
 
 .navbar-default .navbar-brand {
@@ -236,11 +236,11 @@ body h3 {
   text-align: center;
   background-color: rgba(12,20,28,.3);
   opacity: 0;
-  transition: all .8s;
-  -webkit-transition: all .8s;
-  -moz-transition: all .8s;
-  -o-transition: all .8s;
-  -ms-transition: all .8s;
+  transition: all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -o-transition: all .6s;
+  -ms-transition: all .6s;
 }
 
 .section-footer h3 {
@@ -280,21 +280,21 @@ body h3 {
   top: -150px;
   position: relative;
   opacity: 0;
-  transition: all .8s;
-  -webkit-transition: all .8s;
-  -moz-transition: all .8s;
-  -o-transition: all .8s;
-  -ms-transition: all .8s;
+  transition: all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -o-transition: all .6s;
+  -ms-transition: all .6s;
 }
 
 .about .prim-well {
   left: -150px;
   opacity: 0;
-  transition: all .8s;
-  -webkit-transition: all .8s;
-  -moz-transition: all .8s;
-  -o-transition: all .8s;
-  -ms-transition: all .8s;
+  transition: all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -o-transition: all .6s;
+  -ms-transition: all .6s;
 }
 
 .about .about-icon {
@@ -305,11 +305,11 @@ body h3 {
   .about .about-icon {
     top: 150px;
     opacity: 0;
-    transition: all .8s;
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -o-transition: all .8s;
-    -ms-transition: all .8s;
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -o-transition: all .6s;
+    -ms-transition: all .6s;
   }
 }
 
@@ -344,11 +344,11 @@ body h3 {
   position: relative;
   display: table;
   margin: auto;
-  transition: all .8s;
-  -moz-transition: all .8s;
-  -webkit-transition: all .8s;
-  -o-transition: all .8s;
-  -ms-transition: all .8s;
+  transition: all .6s;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  -ms-transition: all .6s;
 }
 
 .services .row:last-child {
@@ -356,11 +356,11 @@ body h3 {
 }
 
 .services .well {
-  transition: all .8s;
-  -moz-transition: all .8s;
-  -webkit-transition: all .8s;
-  -o-transition: all .8s;
-  -ms-transition: all .8s;
+  transition: all .6s;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  -ms-transition: all .6s;
 }
 
 @media (min-width: 992px) {
@@ -436,11 +436,11 @@ body h3 {
   padding: 0;
   border-radius: 0;
   margin-bottom: 50px;
-  transition: all .8s;
-  -moz-transition: all .8s;
-  -webkit-transition: all .8s;
-  -o-transition: all .8s;
-  -ms-transition: all .8s;
+  transition: all .6s;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  -ms-transition: all .6s;
 }
 
 @media (min-width: 992px) {
@@ -456,11 +456,11 @@ body h3 {
 .team .social {
   height: 5px;
   overflow: hidden;
-  transition: all .8s;
-  -moz-transition: all .8s;
-  -webkit-transition: all .8s;
-  -o-transition: all .8s;
-  -ms-transition: all .8s;
+  transition: all .6s;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  -ms-transition: all .6s;
 }
 
 .team .social-icon {
@@ -527,11 +527,11 @@ body h3 {
   text-align: center;
   padding: 0 60px;
   opacity: 0;
-  transition: all .5s;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
+  transition: all .6s;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  -ms-transition: all .6s;
 }
 
 .clients p {
@@ -540,4 +540,16 @@ body h3 {
 
 /*************************************************************************/
 /* ENDOF Clients section styles                                          */
+/*************************************************************************/
+
+/*************************************************************************/
+/* Contact section styles                                                */
+/*************************************************************************/
+
+.contact #map {
+  height: 400px;
+}
+
+/*************************************************************************/
+/* ENDOF Contact section styles                                          */
 /*************************************************************************/

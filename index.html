@@ -348,7 +348,7 @@
     </section>
 
     <section class="contact">
-      
+      <div id="map"></div>
     </section>
   </div>
 
@@ -362,11 +362,29 @@
   <script src="js/script.js"></script>
   <script src="js/animatescroll.js"></script>
   <script src="js/jquery.stellar.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
+  <script src="js/gmaps.js"></script>
   <script>
     $(function(){
       $.stellar({
         horizontalScrolling: false,
         // verticalOffset: 150
+      });
+    });
+
+    $(function() {
+      var map = new GMaps({
+        div: '#map',
+        lat: -12.043333,
+        lng: -77.049333,
+        // zoomControl : false
+        disableDefaultUI: true,
+        scrollwheel: false
+      });
+
+      map.addMarker({
+        lat: -12.043330,
+        lng: -77.035333
       });
     });
   </script>
