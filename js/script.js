@@ -170,4 +170,8 @@ $(".team").waypoint(function() {
 
 $(".clients").waypoint(function() {
   $(this).find(".client").css({"opacity": "1", "transform": "scale(1,1)"});
-}, { offset: 150 });
+}, { offset: 300 });
+
+$(".contact").waypoint(function() {
+  $(this).find(".panel").css({"opacity": "1", "margin-left": "0"});
+}, { offset: 300 });

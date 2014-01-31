@@ -35,3 +35,9 @@
 .icon-linkedin:before {
 	content: "\e603";
 }
+.icon-phone:before {
+	content: "\e604";
+}
+.icon-envelope:before {
+	content: "\e605";
+}
