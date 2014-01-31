@@ -167,3 +167,7 @@ $("section").find(".section-footer-bg").waypoint(function() {
 $(".team").waypoint(function() {
   $(this).find(".container").css({"opacity": "1", "transform": "scale(1,1)"});
 }, { offset: 150 });
+
+$(".clients").waypoint(function() {
+  $(this).find(".client").css({"opacity": "1", "transform": "scale(1,1)"});
+}, { offset: 150 });
