@@ -173,5 +173,5 @@ $(".clients").waypoint(function() {
 }, { offset: 300 });
 
 $(".contact").waypoint(function() {
-  $(this).find(".panel").css({"opacity": "1", "margin-left": "0"});
+  $(this).find(".panel").css("opacity", "1");
 }, { offset: 300 });

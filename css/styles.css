@@ -548,6 +548,7 @@ body h3 {
 
 .contact {
   padding-bottom: 0 !important;
+  height: 450px;
 }
 
 .contact #map {
@@ -561,6 +562,7 @@ body h3 {
   height: 380px;
   opacity: 0;
   position: relative;
+  border: 1px solid #384047;
   transition: all 1s;
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
@@ -570,6 +572,8 @@ body h3 {
 
 .contact .panel .panel-heading {
   background-color: #fff;
+  border-top: 4px solid #384047;
+  border-radius: 0;
 }
 
 .contact .panel p {
@@ -605,8 +609,7 @@ body h3 {
     position: absolute;
     margin-top: 35px;
     box-shadow: 0 0 10px #000;
-    z-index: 1;
-    margin-left: 800px;
+    z-index: 10;
   }
 }
 
