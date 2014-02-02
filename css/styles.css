@@ -631,6 +631,10 @@ body h3 {
 /* Portfolio section styles                                              */
 /*************************************************************************/
 
+.portfolio .section-footer-bg {
+  background-image: url(../img/portfolio/background.jpg);
+}
+
 #grid .mix {
   opacity: 0;
   display: none;
