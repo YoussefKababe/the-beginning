@@ -174,33 +174,42 @@
       <div class="container">
         <div class="col-md-10 col-md-offset-1">
           <div id="grid-controls">
-            <ul class="nav nav-pills">
-              <li class="filter" data-filter="mix">All</li>
-              <li class="filter" data-filter="web">Web development</li>
-              <li class="filter" data-filter="design">Web Design</li>
-              <li class="filter" data-filter="dogs cats">Hosting</li>
+            <ul>
+              <li class="active filter btn btn-default" data-filter="mix">All</li>
+              <li class="filter btn btn-default" data-filter="web">Web development</li>
+              <li class="filter btn btn-default" data-filter="design">Web Design</li>
+              <li class="filter btn btn-default" data-filter="hosting">Hosting</li>
             </ul> 
           </div>
 
           <div id="grid">
             <ul>
-              <li class="mix col-md-4 col-xs-12 col-sm-5">
-                <img class="img-rounded" src="img/portfolio/1.jpg" alt="">
+              <li class="mix web col-md-4 col-xs-12 col-sm-5">
+                <a href="img/portfolio/1-big.jpg"><img class="img-rounded" src="img/portfolio/1.jpg" alt=""></a>
               </li>
-              <li class="mix col-md-4 col-xs-12 col-sm-5">
-                <img class="img-rounded" src="img/portfolio/1.jpg" alt="">
+              <li class="mix web col-md-4 col-xs-12 col-sm-5">
+                <a href="img/portfolio/2-big.jpg"><img class="img-rounded" src="img/portfolio/2.jpg" alt=""></a>
               </li>
-              <li class="mix col-md-4 col-xs-12 col-sm-5">
-                <img class="img-rounded" src="img/portfolio/1.jpg" alt="">
+              <li class="mix web col-md-4 col-xs-12 col-sm-5">
+                <a href="img/portfolio/3-big.jpg"><img class="img-rounded" src="img/portfolio/3.jpg" alt=""></a>
               </li>
-              <li class="mix col-md-4 col-xs-12 col-sm-5">
-                <img class="img-rounded" src="img/portfolio/1.jpg" alt="">
+              <li class="mix design col-md-4 col-xs-12 col-sm-5">
+                <a href="img/portfolio/4-big.jpg"><img class="img-rounded" src="img/portfolio/4.jpg" alt=""></a>
               </li>
-              <li class="mix col-md-4 col-xs-12 col-sm-5">
-                <img class="img-rounded" src="img/portfolio/1.jpg" alt="">
+              <li class="mix design col-md-4 col-xs-12 col-sm-5">
+                <a href="img/portfolio/5-big.jpg"><img class="img-rounded" src="img/portfolio/5.jpg" alt=""></a>
               </li>
-              <li class="mix col-md-4 col-xs-12 col-sm-5">
-                <img class="img-rounded" src="img/portfolio/1.jpg" alt="">
+              <li class="mix design col-md-4 col-xs-12 col-sm-5">
+                <a href="img/portfolio/6-big.jpg"><img class="img-rounded" src="img/portfolio/6.jpg" alt=""></a>
+              </li>
+              <li class="mix hosting col-md-4 col-xs-12 col-sm-5">
+                <a href="img/portfolio/7-big.jpg"><img class="img-rounded" src="img/portfolio/7.jpg" alt=""></a>
+              </li>
+              <li class="mix hosting col-md-4 col-xs-12 col-sm-5">
+                <a href="img/portfolio/8-big.jpg"><img class="img-rounded" src="img/portfolio/8.jpg" alt=""></a>
+              </li>
+              <li class="mix hosting col-md-4 col-xs-12 col-sm-5">
+                <a href="img/portfolio/9-big.jpg"><img class="img-rounded" src="img/portfolio/9.jpg" alt=""></a>
               </li>
             </ul>
           </div>
@@ -436,9 +445,7 @@
           horizontalScrolling: false
         });
       }
-    });
 
-    $(function() {
       var map = new GMaps({
         div: '#map',
         lat: -12.043333,
@@ -465,6 +472,8 @@
           map.setCenter(-12.043333, -77.049333);
         }
       });
+
+      $('#grid').mixitup();
     });
   </script>
 </body>
