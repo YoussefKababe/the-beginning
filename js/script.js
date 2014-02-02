@@ -174,4 +174,4 @@ $(".clients").waypoint(function() {
 
 $(".contact").waypoint(function() {
   $(this).find(".panel").css("opacity", "1");
-}, { offset: 300 });
+}, { offset: 200 });

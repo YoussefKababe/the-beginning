@@ -560,7 +560,6 @@ body h3 {
 
 .contact {
   padding-bottom: 0 !important;
-  height: 450px;
 }
 
 .contact #map {
@@ -617,9 +616,15 @@ body h3 {
 @media (min-width: 768px) {
   .contact .panel {
     position: absolute;
-    margin-top: 35px;
+    margin-top: 140px;
     box-shadow: 0 0 10px #000;
     z-index: 10;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact #map {
+    height: 250px;
   }
 }
 
@@ -666,4 +671,42 @@ body h3 {
 
 /*************************************************************************/
 /* ENDOF Portfolio section styles                                        */
+/*************************************************************************/
+
+/*************************************************************************/
+/* Footer styles                                                         */
+/*************************************************************************/
+
+footer {
+  /*height: 120px;*/
+  background-color: #384047;
+  text-align: center;
+  overflow: hidden;
+}
+
+footer .footer-content {
+  margin: 20px 50px 20px;
+  color: #fff;
+  font-family: 'Oxygen-bold', sans-serif !important;
+}
+
+footer ul {
+  margin: 20px 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  footer ul li {
+    margin: 0;
+  }
+}
+
+/*************************************************************************/
+/* ENDOF Footer styles                                                         */
 /*************************************************************************/
