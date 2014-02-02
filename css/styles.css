@@ -168,8 +168,18 @@ body h3 {
 .main section.portfolio,
 .main section.team,
 .main section.contact,
-.main section.services {
-  padding: 100px 0 100px;
+.main section.services,
+.main section.clients {
+  padding: 50px 0 0;
+}
+
+.main section .section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main section .section-heading h1 {
+  font-family: 'Oxygen-bold', sans-serif !important;
 }
 
 .home .main-jb {
@@ -337,10 +347,6 @@ body h3 {
 /*************************************************************************/
 /* Services section styles                                               */
 /*************************************************************************/
-
-.services {
-  padding: 50px 0 50px !important;
-}
 
 .services .section-footer-bg {
   background-image: url(../img/services/background.jpg);
