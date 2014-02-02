@@ -85,6 +85,21 @@ body h3 {
   -ms-transition: background-color .6s;
 }
 
+@media (max-width: 768px) {
+  .navbar-default ul {
+    text-align: center;
+  }
+
+  .navbar-default ul li a {
+    margin: 0 20px;
+  }
+
+  .navbar-default ul li.active a {
+    color: #fff !important;
+    background-color: #384047 !important;
+  }
+}
+
 .navbar-default .navbar-brand {
   color: #777777;
   font-size: 25px;
@@ -202,8 +217,8 @@ body h3 {
   text-shadow: none;
   padding: 20px 30px;
   width: 200px;
-  background-color: #384047;
-  border-color: #384047;
+  /*background-color: #384047;*/
+  /*border-color: #384047;*/
 }
 
 .well {
